@@ -1,0 +1,28 @@
+
+# Default line ending handling
+* text=auto
+
+# Shell scripts must use LF
+*.sh text eol=lf
+
+# Source files
+*.js text eol=lf
+*.jsx text eol=lf
+*.cjs text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+
+# Binary files
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.png binary
+*.jpg binary
+*.ico binary
+
+# Bundled executables
+bin/linux/pcb2gcode binary
+bin/mac/pcb2gcode binary

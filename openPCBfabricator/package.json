@@ -1,0 +1,51 @@
+{
+  "name": "openpcbfabricator",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "main.cjs",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:vite\" \"npm run dev:electron\"",
+    "dev:vite": "vite",
+    "dev:electron": "wait-on http://localhost:5173 && electron .",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@mantine/charts": "^9.3.0",
+    "@mantine/core": "^9.3.0",
+    "@mantine/dropzone": "^9.3.0",
+    "@mantine/hooks": "^9.3.0",
+    "@mantine/notifications": "^9.3.0",
+    "@tabler/icons-react": "^3.44.0",
+    "@tailwindcss/postcss": "^4.3.0",
+    "@tailwindcss/vite": "^4.3.0",
+    "adm-zip": "^0.5.17",
+    "clipper-lib": "^6.4.2",
+    "gerber-to-svg": "^4.2.8",
+    "pcb-stackup": "^4.2.8",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-svg": "^17.2.4",
+    "react-zoom-pan-pinch": "^4.0.3",
+    "recharts": "^3.8.1",
+    "svg-path-properties": "^2.0.2",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "concurrently": "^10.0.3",
+    "electron": "^42.3.3",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "postcss": "^8.5.15",
+    "postcss-preset-mantine": "^1.18.0",
+    "postcss-simple-vars": "^7.0.1",
+    "vite": "^8.0.12",
+    "wait-on": "^9.0.10"
+  }
+}
